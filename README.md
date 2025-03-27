@@ -40,4 +40,4 @@ Please cite our paper if you use this repository.
 ```
 
 ## Misc
-The implementation is based on [Microsoft Recommender](https://github.com/microsoft/recommenders).
+The implementation is based on [Microsoft Recommender](https://github.com/microsoft/recommenders) and [SIGIR21-SURGE](https://github.com/tsinghua-fib-lab/SIGIR21-SURGE).
