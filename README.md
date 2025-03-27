@@ -14,13 +14,16 @@ git clone https://github.com/ZuGeYunQian/SEA-GNN.git
 conda env create -f reco_env.yaml
 conda activate recp_full_408
 pip install -r reco_req.txt
-
 ```
 
 ### Dataset Preparation
+We have processed the data in advance and put it in the resources folder.
+Here we convert the original MoviceLens dataset into .csv format.
+You can run it directly. The rest of the data preprocessing is in the code.
+
 
 ## Basic Usage
-### Training
+### Training and Testing
 Run the files in examples/00_quick_start
 
 ## References
