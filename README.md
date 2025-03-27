@@ -3,7 +3,23 @@ This is our TensorFlow implementation for the paper:
 [SEA-GNN: Sequence Extension Augmented Graph Neural Network for Sequential Recommendation](https://ieeexplore.ieee.org/abstract/document/10446590/)
 
 
+## Environment Setup
+### Clone this directory
+```
+git clone https://github.com/ZuGeYunQian/SEA-GNN.git
+```
 
+### Install Dependencies
+```
+conda
+
+```
+
+### Dataset Preparation
+
+## Basic Usage
+### Training
+Run the files in examples/00_quick_start
 
 ## References
 Please cite our paper if you use this repository.
@@ -19,4 +35,4 @@ Please cite our paper if you use this repository.
 ```
 
 ## Misc
-The implemention is based on [Microsoft Recommender](https://github.com/microsoft/recommenders).
+The implementation is based on [Microsoft Recommender](https://github.com/microsoft/recommenders).
