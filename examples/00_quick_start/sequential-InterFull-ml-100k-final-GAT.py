@@ -13,10 +13,8 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "4"
 
 import sys
 sys.path.append("/home/zgyq/ZGYQ/SIGIR21-SURGE")
-from reco_utils.recommender.deeprec.models.sequential.Inter import InterModel
 from reco_utils.recommender.deeprec.models.sequential.Inter_full import InterFullModel
 from reco_utils.recommender.deeprec.models.sequential.Inter_full_GAT import InterFullModelGAT
-from reco_utils.recommender.deeprec.models.sequential.Inter_full_GAT_card_2 import InterFullModelGATCard2
 
 from reco_utils.QQmail import ExperimentEmailSender
 sys.path.append("../../")
@@ -479,7 +477,7 @@ def get_model(flags_obj, model_path, summary_path, pretrain_path, finetune_path,
                                   weighted_metrics=weighted_metrics,
                                   min_seq_length=1,
                                   )
-        model = InterFullModelGATCard2(hparams, input_creator, seed=RANDOM_SEED)
+        model = InterFullModel(hparams, input_creator, seed=RANDOM_SEED)
 
     # DIEN
     elif flags_obj.model == 'DIEN':

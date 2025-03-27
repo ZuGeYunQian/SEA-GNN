@@ -9,6 +9,8 @@ from absl import logging
 
 import os
 
+from reco_utils.recommender.deeprec.models.sequential.Inter_full import InterFullModel
+
 os.environ["CUDA_VISIBLE_DEVICES"] = "4"
 
 import sys
@@ -442,7 +444,7 @@ def get_model(flags_obj, model_path, summary_path, pretrain_path, finetune_path,
                                   weighted_metrics=weighted_metrics,
                                   min_seq_length=1,
                                   )
-        model = InterFullModelGAT(hparams, input_creator, seed=RANDOM_SEED)
+        model = InterFullModel(hparams, input_creator, seed=RANDOM_SEED)
 
     # DIEN
     elif flags_obj.model == 'DIEN':
