@@ -11,7 +11,9 @@ git clone https://github.com/ZuGeYunQian/SEA-GNN.git
 
 ### Install Dependencies
 ```
-conda
+conda env create -f reco_env.yaml
+conda activate recp_full_408
+pip install -r reco_req.txt
 
 ```
 
